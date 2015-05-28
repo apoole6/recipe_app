@@ -11,6 +11,7 @@
       <th>Instructions</th>
       <th>Minutes to prepare</th>
       <th>Minutes to cook</th>
+      <th>Total minutes to make</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -24,7 +25,8 @@
         <td><%= recipe.instructions %></td>
         <td><%= recipe.minutes_to_prepare %></td>
         <td><%= recipe.minutes_to_cook %></td>
-        <td><%= link_to 'Show', recipe %></td>
+        <td><%= recipe.minutes_total %></td>
+        <td><%= link_to recipe.name, recipe %></td>
         <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
         <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

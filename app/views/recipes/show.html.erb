@@ -9,7 +9,11 @@
   <strong>Category:</strong>
   <%= @recipe.category %>
 </p>
-
+<p>
+    <strong>Picture</strong>
+     <%= image_tag(@recipe.picture_url, :width => 200) %>
+     
+</p>
 <p>
   <strong>Ingredients:</strong>
   <%= @recipe.ingredients %>
